@@ -59,6 +59,10 @@ Texten till bilderna i gallery
   border-radius: 5px 0 15px 0;
 }
 
+#faq button:link{
+  text-decoration: none;
+}
+
 /*
 Den enda breakpointen som inte styrs av bootstrap
 anpassar bara bakgrunden åt texten i galleriet så man kan se bilderna

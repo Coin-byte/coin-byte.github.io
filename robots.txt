@@ -1,0 +1,8 @@
+#Tillåter bara googlebot
+User-agent: *
+Disallow: /
+User-agent: Googlebot
+Allow: /
+
+#Pekar på min sitemap
+Sitemap: https://coin-byte.github.io/sitemap.xml
