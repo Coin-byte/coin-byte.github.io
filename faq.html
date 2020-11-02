@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home</title>
+  </head>
+
+  <body class="container px-lg-5 d-flex flex-column" style="min-height: 100vh">
+    <nav class="row navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="img/placeholder.com-logo1.png"
+          class="d-inline-block align-top"
+          alt="placeholderLogo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Booking</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="row mx-lg-n5 flex-fill">
+      <div class="container-fluid px-5">
+        <h1 class="text-center my-3">FAQ</h1>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Har ni shuffelboard?
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Nej, för tillfället har vi inte shuffelboard men planen är att
+                införskaffa detta så snart som möjligt.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Jag har försökt boka ikväll men får inget svar?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Om ni hör av er och vill boka för dagens datum, kan det bero på
+                att vi har många gäster för tillfället och inte prioriterar
+                mailen.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Hur länge kan jag boka ett bord?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Ni spelar hur länge ni vill, och betalar när ni är färdiga.
+                Däremot tar vi bara bokningar fram till 21.00 på Helger,
+                därefter är det drop-in.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Har ni alkoholtillstånd?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingFour"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Vi har fulla rättigheter och är noggranna med leg-kontroll.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed text-left"
+                data-toggle="collapse"
+                data-target="#collapsenbr"
+                aria-expanded="false"
+                aria-controls="collapsenbr"
+              >
+                Vad ska jag göra om jag har glömt mitt id hemma?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapsenbr"
+            class="collapse"
+            aria-labelledby="headingFive"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              Både vi och myndigheter kräver en giltlig legitimation, har du
+              inte en kommer du tyvärr få lämna lokalen
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="row">
+      <div class="container-fluid p-3">
+        <div class="row">
+          <div class="col-4 p-1">
+            <address>
+              <a class="m-1" href="#"><i class="fa fa-map-marker"></i></a>Norra
+              Strandgatan 32 Helsingborg
+            </address>
+          </div>
+          <div class="col-3">
+            <p>
+              <a class="m-1" href="#"><i class="fa fa-phone"></i></a>Telefon:
+              042-141814
+            </p>
+          </div>
+          <div class="col-2">
+            <a href="faq.html">FAQ</a>
+          </div>
+          <div class="col-3">
+            <ul
+              class="row list-inline list-unstyled float-right"
+              style="font-size: 40px"
+            >
+              <li>
+                <a class="m-1" href="#"
+                  ><i class="fa fa-facebook-square"></i
+                ></a>
+              </li>
+              <li>
+                <a class="m-1" href="#"><i class="fa fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a class="m-1" href="#"
+                  ><i class="fa fa-linkedin-square"></i
+                ></a>
+              </li>
+              <li>
+                <a class="m-1" href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://use.fontawesome.com/08d1000a5b.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

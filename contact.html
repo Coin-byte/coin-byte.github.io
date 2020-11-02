@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Booking</title>
+  </head>
+
+  <body class="container px-lg-5 d-flex flex-column" style="min-height: 100vh">
+    <nav class="row navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="img/placeholder.com-logo1.png"
+          class="d-inline-block align-top"
+          alt="placeholderLogo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html"
+              >Booking<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="row mx-lg-n5 flex-fill">
+      <form class="container mt-2 mx-5 p-5" action="mailto:test@test.se">
+        <h2
+          class="row d-flex justify-content-center"
+          style="text-align: center"
+        >
+          Do you wish to book a Pooltable?
+        </h2>
+        <p class="row d-flex justify-content-center" style="text-align: center">
+          Call us, or fill out this form and we'll get back to you! <br />(We
+          recommend a maximum of 4 people per table.)
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="formName"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="tel"
+                class="form-control"
+                id="formPhone"
+                placeholder="070-000 00 00"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="formMail"
+                placeholder="mail@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="time"
+                value="18.00"
+                class="form-control"
+                id="formTime"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="form-group">
+              <select class="form-control" id="formSelect1">
+                <option>1 table</option>
+                <option>2 tables</option>
+                <option>3 tables</option>
+                <option>4 tables</option>
+                <option>5 tables</option>
+                <option>6 tables</option>
+                <option>7 tables</option>
+                <option>8 tables</option>
+                <option>9 tables</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="formSelect2">
+                <option>1 person</option>
+                <option>2 persons</option>
+                <option>3 persons</option>
+                <option>4 persons</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                id="textArea"
+                rows="4"
+                maxlength="200"
+                placeholder="Any questions you might have, not answered in the FAQ (max 200 characters)"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark mb-3">Send</button>
+      </form>
+    </main>
+
+    <footer class="row">
+      <div class="container-fluid p-3">
+        <div class="row">
+          <div class="col-4 p-1">
+            <address>
+              <a class="m-1" href="#"><i class="fa fa-map-marker"></i></a>Norra
+              Strandgatan 32 Helsingborg
+            </address>
+          </div>
+          <div class="col-3">
+            <p>
+              <a class="m-1" href="#"><i class="fa fa-phone"></i></a>Telefon:
+              042-141814
+            </p>
+          </div>
+          <div class="col-2">
+            <a href="faq.html">FAQ</a>
+          </div>
+          <div class="col-3">
+            <ul
+              class="row list-inline list-unstyled float-right"
+              style="font-size: 40px"
+            >
+              <li>
+                <a class="m-1" href="#"
+                  ><i class="fa fa-facebook-square"></i
+                ></a>
+              </li>
+              <li>
+                <a class="m-1" href="#"><i class="fa fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a class="m-1" href="#"
+                  ><i class="fa fa-linkedin-square"></i
+                ></a>
+              </li>
+              <li>
+                <a class="m-1" href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://use.fontawesome.com/08d1000a5b.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

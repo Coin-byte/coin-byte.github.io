@@ -1,0 +1,70 @@
+/*
+Tog beslutet att försöka göra så mycket som möjligt med hjälp av bootstrap
+Anledningen till detta är för föregående övning var helt och hållet egen css
+och aldrig använt mig av bootstrap förut
+*/
+body {
+  background-color: #f1f1f1;
+}
+nav {
+  border-radius: 5px;
+}
+nav a img {
+  width: 350px;
+  height: 70px;
+}
+nav a:hover {
+  color: white;
+  background-color: rgb(104, 104, 104);
+  border-radius: 5px;
+  max-width: fit-content;
+}
+main {
+  color: rgb(31, 31, 31);
+}
+main .cardIMG {
+  float: right;
+  width: 50%;
+  height: 50%;
+}
+footer {
+  border-radius: 5px;
+}
+aside ul {
+  list-style-type: none;
+}
+
+/*
+Texten till bilderna i gallery
+*/
+.test {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.test img {
+  vertical-align: middle;
+}
+
+.test figcaption {
+  position: absolute;
+  top: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
+  color: #f1f1f1;
+  width: auto;
+  max-width: 200px;
+  padding: 15px;
+  border-radius: 5px 0 15px 0;
+}
+
+/*
+Den enda breakpointen som inte styrs av bootstrap
+anpassar bara bakgrunden åt texten i galleriet så man kan se bilderna
+*/
+@media only screen and (max-width: 600px) {
+  .test figcaption {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
